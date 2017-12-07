@@ -4,18 +4,7 @@ pipeline {
         string(name: 'ARUN', defaultValue: 'Veridic', description: 'Who should I say hello to?')
  
         booleanParam(name: 'Is_True', defaultValue: true, description: '') 
-        
-        if (States.equals("Sao Paulo")) {
-  return ["Barretos", "Sao Paulo", "Itu"]
-} else if (States.equals("Rio de Janeiro")) {
-  return ["Rio de Janeiro", "Mangaratiba"]
-} else if (States.equals("Parana")) {
-  return ["Curitiba", "Ponta Grossa"]
-} else if (States.equals("Acre")) {
-  return ["Rio Branco", "Acrelandia"]
-} else {
-  return ["Unknown state"]
-}
+       
     }
     stages {
         stage('Example') {
